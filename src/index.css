@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-satoshi;
+}
+.gradient-number {
+  background: #7968cf;
+  background: linear-gradient(
+    to bottom,
+    #7968cf 0%,
+    #ffffff 65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  user-select: none;
+}
