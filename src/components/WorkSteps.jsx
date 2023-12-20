@@ -26,14 +26,14 @@ const WorkSteps = () => {
     <>
       <div className=" herosection w-full h-screen flex justify-center bg-gray-100">
         <div className=" bg-white w-[85%] h-[750px] border border-gray-200 rounded-3xl">
-          <div className=" flex flex-col items-center p-10">
+          <div className="  flex flex-col items-center p-10">
             <h1 className=" text-6xl font-medium py-1">How it works</h1>
             <p className=" py-2 text-md text-gray-500 font-medium">
               Premium designs, unlimited requests, super fast delivery, for one
               flat monthly fee.
             </p>
           </div>
-          <div className="flex p-5">
+          <div className="flex p-5 ">
             {stepsContent.map((item, i) => {
               if (i === stepsContent.length - 1) {
                 return (

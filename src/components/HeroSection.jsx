@@ -19,7 +19,7 @@ const HeroSection = () => {
             <span className=" px-4">FAQ</span>
           </div>
 
-          <button className=" font-medium border border-black rounded-md p-2 px-4">
+          <button className=" font-semibold border border-black rounded-md p-2 px-4">
             Contact us
           </button>
         </nav>
