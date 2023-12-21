@@ -1,4 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
+const fadeInAnimationvariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: { opacity: 1, y: 0 },
+};
 
 const Footer = () => {
   return (
@@ -9,7 +14,14 @@ const Footer = () => {
           alt="homePic"
           className=" w-full h-full absolute"
         />
-        <div className=" flex flex-col items-center py-3 md:py-10 lg:py-12 ">
+        <motion.div
+          variants={fadeInAnimationvariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0.7, duration: 0.7 }}
+          viewport={{ once: true }}
+          className=" flex flex-col items-center py-3 md:py-10 lg:py-12 "
+        >
           <h1 className=" text-3xl md:text-5xl lg:text-6xl font-semibold relative w-[90%] md:w-[90%] lg:w-[50%] text-center py-2">
             No long-term contracts. No catches. Simple.
           </h1>
@@ -19,9 +31,16 @@ const Footer = () => {
           <button className=" items-center hover:bg-transparent relative text-lg font-medium border border-black text-white hover:text-black bg-black  px-8 md:px-10 lg:px-10 py-1 md:py-2 lg:py-2 rounded-md">
             Contact us
           </button>
-        </div>
+        </motion.div>
 
-        <div className=" flex flex-col md:flex-col lg:flex-row justify-between border border-t-gray-600 ">
+        <motion.div
+          variants={fadeInAnimationvariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0.7, duration: 0.7 }}
+          viewport={{ once: true }}
+          className=" flex flex-col md:flex-col lg:flex-row justify-between border border-t-gray-600 "
+        >
           <div className=" p-4 md:p-7 lg:p-8  py-10 md:py-9 lg:py-32 ">
             <h1 className=" text-2xl font-semibold py-1 ">UniCraft</h1>
             <p className=" text-lg text-gray-500 font-medium py-1 relative">
@@ -60,7 +79,7 @@ const Footer = () => {
               className=" hover:scale-125"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -30,18 +31,42 @@ const HeroSection = () => {
           </button>
         </nav>
         <header className=" flex flex-col items-center py-8 md:py-9 lg:py-20 w-full relative">
-          <h1 className=" text-4xl md:text-6xl lg:text-7xl font-bold text-center w-[95%] md:w-[80%] lg:w-[80%] py-6 md:py-4 lg:py-4">
+          <motion.h1
+            initial={{ opacity: 0, y: 70 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.7 }}
+            viewport={{ once: true }}
+            className=" text-4xl md:text-6xl lg:text-7xl font-bold text-center w-[95%] md:w-[80%] lg:w-[80%] py-6 md:py-4 lg:py-4"
+          >
             Elevate Your Presence with Seamless Design and Innovation.
-          </h1>
-          <p className=" p-2 text-center py-4 md:py-5 lg:py-5 font-medium text-gray-500">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 70 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.7 }}
+            viewport={{ once: true }}
+            className=" p-2 text-center py-4 md:py-5 lg:py-5 font-medium text-gray-500"
+          >
             From strategic planning to digital presence, we're your dedicated
             partner in achieving solo success.
-          </p>
-          <button className=" relative border border-gray-600 bg-black hover:bg-transparent rounded-lg p-3 px-7 text-white hover:text-black font-medium">
+          </motion.p>
+          <motion.button
+            initial={{ opacity: 0, y: 70 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.7 }}
+            viewport={{ once: true }}
+            className=" relative border border-gray-600 bg-black hover:bg-transparent rounded-lg p-3 px-7 text-white hover:text-black font-medium"
+          >
             View Pricing
-          </button>
+          </motion.button>
         </header>
-        <div className=" flex flex-col items-center relative ">
+        <motion.div
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.7 }}
+          viewport={{ once: true }}
+          className=" flex flex-col items-center relative "
+        >
           <p className=" text-xs text-gray-400 font-medium">
             Trusted By 250+ Companies
           </p>
@@ -65,7 +90,7 @@ const HeroSection = () => {
               <img src="/Images/Adobe.png" alt="Zapier" />
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

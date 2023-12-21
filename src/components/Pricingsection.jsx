@@ -1,4 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const fadeInAnimationvariants = {
+  initial: { opacity: 0, x: -150 },
+  animate: { opacity: 1, x: 0 },
+};
 
 const Pricingsection = () => {
   const cards = [
@@ -67,7 +73,12 @@ const Pricingsection = () => {
 
         <div className="flex flex-col md:flex-wrap md:flex-row lg:flex-row lg:justify-center md:justify-center items-center gap-4 md:gap-5 lg:gap-8">
           {cards.map((card, index) => (
-            <div
+            <motion.div
+              variants={fadeInAnimationvariants}
+              initial="initial"
+              whileInView="animate"
+              transition={{ delay: 0.5, duration: 0.7 }}
+              viewport={{ once: true }}
               key={index}
               className={`relative w-[340px] md:w-[350px] lg:w-[450px] h-fit rounded-lg p-2 md:p-5 border border-gray-300 shadow-sm hover:shadow-xl ${
                 index === 1 ? "bg-gray-700 text-white" : "bg-gray-100"
@@ -118,7 +129,7 @@ const Pricingsection = () => {
                   </li>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

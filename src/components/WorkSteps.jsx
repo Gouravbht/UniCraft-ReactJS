@@ -1,5 +1,9 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+const fadeInAnimationvariants = {
+  initial: { opacity: 0, y: 150 },
+  animate: { opacity: 1, y: 0 },
+};
 const WorkSteps = () => {
   let stepsContent = [
     {
@@ -25,7 +29,14 @@ const WorkSteps = () => {
   return (
     <>
       <div className=" hidden herosection w-full h-screen lg:flex justify-center bg-gray-100 py-8 md:py-0 lg:py-0">
-        <div className=" bg-white w-[90%] h-fit md:w-[80%] md:h-[700px] lg:w-[85%] lg:h-[750px] border border-gray-200 rounded-3xl">
+        <motion.div
+          variants={fadeInAnimationvariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0.5, duration: 0.7 }}
+          viewport={{ once: true }}
+          className=" bg-white w-[90%] h-fit md:w-[80%] md:h-[700px] lg:w-[85%] lg:h-[750px] border border-gray-200 rounded-3xl"
+        >
           <div className="  flex flex-col items-center p-6 md:p-8 lg:p-10">
             <h1 className=" text-4xl md:text-5xl lg:text-6xl font-semibold md:font-semibold lg:font-medium py-3 md:py-2 lg:py-1">
               How it works
@@ -64,7 +75,7 @@ const WorkSteps = () => {
                 );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
