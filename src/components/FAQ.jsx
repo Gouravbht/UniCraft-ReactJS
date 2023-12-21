@@ -47,15 +47,15 @@ const FAQ = () => {
   return (
     <>
       <div className="w-full h-full bg-slate-100 py-6">
-        <div className="flex flex-col items-center py-12">
-          <h1 className="text-6xl font-semibold py-3">
+        <div className="flex flex-col items-center py-6 md:py-10 lg:py-12">
+          <h1 className=" text-4xl text-center md:text-5xllg:text-6xl font-semibold py-3">
             Frequently asked questions
           </h1>
-          <p className="text-sm font-medium text-gray-500">
+          <p className="text-sm font-medium p-2 text-center text-gray-500">
             Everything you need to know about the product and billing.
           </p>
         </div>
-        <div className=" flex flex-col items-center py-2">
+        <div className=" flex flex-col items-center py-2 px-2">
           {faqData.map((item, index) => (
             <div
               key={index}
