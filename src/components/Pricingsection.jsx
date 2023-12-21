@@ -55,14 +55,14 @@ const Pricingsection = () => {
 
   return (
     <>
-      <div className="w-full h-full md:h-full lg:h-screen py-2 md:py-4 lg:py-0">
+      <div className="w-full h-full md:h-full lg:h-screen py-5 md:py-4 lg:py-0">
         <img
           src="/Images/Home.png"
           alt="homepic"
           className=" hidden lg:block w-full h-screen absolute"
         />
         <div className="flex flex-col items-center py-10 md:py-10 lg:py-10">
-          <h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-semibold relative">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-semibold relative p-2 py-2 md:py-0 lg:py-0">
             Pricing made for collaborative support.
           </h1>
           <p className="text-gray-500 relative font-thin text-sm md:text-sm lg:text-lg md:font-medium lg:font-medium py-1 md:py-3 lg:py-1 w-[90%] md:w-[85%] lg:w-[45%%] text-center">

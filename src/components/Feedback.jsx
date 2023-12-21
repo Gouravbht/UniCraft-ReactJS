@@ -9,18 +9,18 @@ const Feedback = () => {
   return (
     <>
       <div className=" bg-gray-100  md:py-16 lg:py-20 w-full h-screen">
-        <motion.div
-          variants={fadeInAnimationvariants}
-          initial="initial"
-          whileInView="animate"
-          transition={{ delay: 0.5, duration: 0.7 }}
-          viewport={{ once: true }}
-          className=" bg-gray-200 w-full h-[830px] md:h-[750px] lg:h-[600px] py-20 md:py-16 lg:py-20 "
-        >
-          <div className=" flex justify-center gap-2 h-4 md:h-5 lg:h-7">
+        <div className=" bg-gray-200 w-full h-[830px] md:h-[750px] lg:h-[600px] py-20 md:py-16 lg:py-20 ">
+          <motion.div
+            variants={fadeInAnimationvariants}
+            initial="initial"
+            whileInView="animate"
+            transition={{ delay: 0.5, duration: 0.7 }}
+            viewport={{ once: true }}
+            className=" flex justify-center gap-2 h-4 md:h-5 lg:h-7"
+          >
             <img src="/Images/logo.png" alt="logo" />
             <img src="/Images/logotype.png" alt="logotype" />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeInAnimationvariants}
             initial="initial"
@@ -41,7 +41,7 @@ const Feedback = () => {
             <h2 className=" text-md font-medium">Candice Wu</h2>
             <p className=" text-gray-500">Product Manager, Sisyphus</p>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </>
   );
