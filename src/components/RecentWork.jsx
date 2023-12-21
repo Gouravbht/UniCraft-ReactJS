@@ -13,7 +13,7 @@ const RecentWork = () => {
           variants={fadeInAnimationvariants}
           initial="initial"
           whileInView="animate"
-          transition={{ delay: 0.7, duration: 0.5 }}
+          transition={{ delay: 0.9, duration: 0.7 }}
           viewport={{ once: true }}
           className="flex"
         >
@@ -39,7 +39,7 @@ const RecentWork = () => {
           variants={fadeInAnimationvariants}
           initial="initial"
           whileInView="animate"
-          transition={{ delay: 0.7, duration: 0.5 }}
+          transition={{ delay: 0.9, duration: 0.7 }}
           viewport={{ once: true }}
           className=" flex justify-center"
         >
