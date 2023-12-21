@@ -34,7 +34,7 @@ const HeroSection = () => {
           <motion.h1
             initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.7 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
             viewport={{ once: true }}
             className=" text-4xl md:text-6xl lg:text-7xl font-bold text-center w-[95%] md:w-[80%] lg:w-[80%] py-6 md:py-4 lg:py-4"
           >
@@ -53,7 +53,7 @@ const HeroSection = () => {
           <motion.button
             initial={{ opacity: 0, y: 70 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.7 }}
+            transition={{ delay: 0.9, duration: 0.9 }}
             viewport={{ once: true }}
             className=" relative border border-gray-600 bg-black hover:bg-transparent rounded-lg p-3 px-7 text-white hover:text-black font-medium"
           >
@@ -63,7 +63,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 70 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          transition={{ delay: 1, duration: 1 }}
           viewport={{ once: true }}
           className=" flex flex-col items-center relative "
         >

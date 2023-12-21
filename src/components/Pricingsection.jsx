@@ -77,7 +77,7 @@ const Pricingsection = () => {
               variants={fadeInAnimationvariants}
               initial="initial"
               whileInView="animate"
-              transition={{ delay: 0.5, duration: 0.7 }}
+              transition={{ delay: 0.8, duration: 0.7 }}
               viewport={{ once: true }}
               key={index}
               className={`relative w-[340px] md:w-[350px] lg:w-[450px] h-fit rounded-lg p-2 md:p-5 border border-gray-300 shadow-sm hover:shadow-xl ${

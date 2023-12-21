@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
+const fadeInAnimationvariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: { opacity: 1, y: 0 },
+};
 const FAQ = () => {
   const [accordion, setAccordion] = useState([]);
 
@@ -48,14 +52,35 @@ const FAQ = () => {
     <>
       <div className="w-full h-full bg-slate-100 py-6">
         <div className="flex flex-col items-center py-6 md:py-10 lg:py-12">
-          <h1 className=" text-4xl text-center md:text-5xllg:text-6xl font-semibold py-3">
+          <motion.h1
+            variants={fadeInAnimationvariants}
+            initial="initial"
+            whileInView="animate"
+            transition={{ delay: 0.5, duration: 0.5 }}
+            viewport={{ once: true }}
+            className=" text-4xl text-center md:text-5xllg:text-6xl font-semibold py-3"
+          >
             Frequently asked questions
-          </h1>
-          <p className="text-sm font-medium p-2 text-center text-gray-500">
+          </motion.h1>
+          <motion.p
+            variants={fadeInAnimationvariants}
+            initial="initial"
+            whileInView="animate"
+            transition={{ delay: 0.7, duration: 0.7 }}
+            viewport={{ once: true }}
+            className="text-sm font-medium p-2 text-center text-gray-500"
+          >
             Everything you need to know about the product and billing.
-          </p>
+          </motion.p>
         </div>
-        <div className=" flex flex-col items-center py-2 px-2">
+        <motion.div
+          variants={fadeInAnimationvariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0.9, duration: 0.9 }}
+          viewport={{ once: true }}
+          className=" flex flex-col items-center py-2 px-2"
+        >
           {faqData.map((item, index) => (
             <div
               key={index}
@@ -77,7 +102,7 @@ const FAQ = () => {
               )}
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
