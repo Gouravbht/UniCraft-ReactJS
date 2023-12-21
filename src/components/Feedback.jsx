@@ -8,8 +8,8 @@ const fadeInAnimationvariants = {
 const Feedback = () => {
   return (
     <>
-      <div className=" bg-gray-100  md:py-16 lg:py-20 w-full h-screen">
-        <div className=" bg-gray-200 w-full h-[830px] md:h-[750px] lg:h-[600px] py-20 md:py-16 lg:py-20 ">
+      <div className=" lg:bg-gray-100 md:bg-gray-100 bg-gray-200  md:py-16 lg:py-20 w-full h-screen">
+        <div className=" bg-gray-200 w-full h-[780px] md:h-[750px] lg:h-[600px] py-20 md:py-16 lg:py-20 ">
           <motion.div
             variants={fadeInAnimationvariants}
             initial="initial"
